@@ -1,0 +1,16 @@
+<!-- {{mystyle}} -->
+<section class="banner" *ngFor="let data of banner"
+    [style.background]="data.color==''?'url('+data.backimage+') no-repeat 0 0 / contain':data.color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h1>{{data.title}}</h1>
+                <p>{{data.subtitle}}</p>
+                <button class="btn btn-primary">{{data.btntitle}}</button>
+            </div>
+            <div class="col-md-6 col-12 mar-mob">
+                <img src="{{data.img}}" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>

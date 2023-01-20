@@ -1,0 +1,31 @@
+.work{
+    padding-top:70px;
+    padding-bottom:70px;
+}
+.work h1{
+    font-weight: 700;
+    font-size: 55px;
+    color: #35b8be;
+}
+
+.work .work-box{
+    border: none;
+    width: 80%;
+    margin: 0px auto;    
+    text-align: center;
+}
+.work .work-box h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+.work .work-box p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #546285;
+}
+.work .work-box img{
+    width:270px;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

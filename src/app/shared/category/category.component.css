@@ -1,0 +1,56 @@
+.category{
+    /* background: rgba(13, 202, 240, 0.09); */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.category .card-box {
+    margin: 10px;
+    padding: 10px;
+    box-shadow:1px 1px 10px rgba(13, 202, 240, 0.09);
+    border: none;
+}
+
+.category .card-box h3 {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.category .card-box p {
+    font-weight: 400;
+    font-size: 17px;
+    color: #546285;
+}
+
+.category .card-box img {
+    border-radius: 8px;
+}
+
+.category .cus-btn {
+    margin: 10px;
+    padding: 10px 40px;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.toggleColor{
+    background-color: #35b8be !important;
+    color: white !important;
+}
+.category .form-control{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+@media (max-width:765px){
+    .padd-mob{
+        padding: 20px 10px;
+    }
+    .category .card-box {
+        margin: 20px;
+        padding: 20px;
+        box-shadow:1px 1px 10px rgba(13, 202, 240, 0.09);
+        border: none;
+    }
+}

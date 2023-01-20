@@ -1,0 +1,35 @@
+.footer{
+    background-color: rgba(13, 202, 240, 0.09);
+    color:#546285;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.footer .cus-nav .nav-item .nav-link{
+    color:#546285;
+}
+
+.company-nav .nav-item {
+  padding: 0.5rem 1rem;
+  list-style: none;
+  padding-left: 0px;
+}
+.company-nav .nav-item a{
+    text-decoration: none;
+    color:#546285;
+
+  }
+
+.footer h2{
+    padding: 30px 30px 0px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#546285;
+
+}
+
+@media (max-width:765px){
+  h5{
+    margin-top: 20px;
+    font-weight: 700;
+  } 
+}

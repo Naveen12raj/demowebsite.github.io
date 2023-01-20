@@ -1,0 +1,51 @@
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/Logo.svg" width="50" class="img-fluid" alt="">
+
+                <h2>
+                    {{msg}}
+                </h2>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <h5>LINKS</h5>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cus-nav">
+                            <li class="nav-item" *ngFor="let links of menu">
+                                <a class="nav-link" routerLinkActive="active-link"
+                                    [routerLinkActiveOptions]="{exact:true}"
+                                    routerLink="{{links.link}}">{{links.name}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5>COMPANY</h5>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 company-nav">
+                            <li class="nav-item" *ngFor="let foot of footer">
+                                <a href="">
+                                    {{foot.mono}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5>Address</h5>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">Bhopal, (M.P)</li>
+                            <li class="nav-item">naveenshri0546@gmail.com</li>
+                            <li class="nav-item">+91 7691927174</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <hr>
+        <div class="row">
+            <div class="col text-center">
+                <h6>Copyright &COPY; 2022 All Rights Reserved By Naveen Shrivastav </h6>
+            </div>
+        </div>
+    </div>
+</section>

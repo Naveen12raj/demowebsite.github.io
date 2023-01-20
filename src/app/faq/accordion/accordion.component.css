@@ -1,0 +1,59 @@
+.accordion {
+    padding-bottom: 60px;
+}
+
+.accordion .cus-btn {
+    margin: 10px;
+    padding: 10px 40px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid #cbc5c5 !important;
+}
+
+.toggleColor {
+    background-color: #35b8be !important;
+    color: white !important;
+}
+
+.accordion .card {
+    border: none;
+}
+
+.accordion .card .card-header {
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(219, 219, 219, 0.658);
+    padding-left: 0px;
+   
+}
+
+.accordion .card .card-header button {
+    border: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #0dcaf0;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+p {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #7e828f;
+    font-size: 18px;
+}
+
+.tag {
+    display: block;
+    float: right;
+
+}

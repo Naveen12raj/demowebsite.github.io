@@ -1,0 +1,39 @@
+.detail {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.detail .card {
+    /* border: none; */
+    padding: 20px;
+
+}
+
+.detail i {
+    font-size: 50px;
+    color: white;
+}
+
+.detail .box {
+    background-color: #35b8be;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 100%;
+    margin: 0px auto;
+    top: -60px;
+}
+
+.detail .box i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:765px) {
+    .detail .card {
+        margin-top: 80px;
+    }
+}

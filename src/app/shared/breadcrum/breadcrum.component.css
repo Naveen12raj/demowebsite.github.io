@@ -1,0 +1,29 @@
+.breadcrum {
+    min-height: 400px;
+    position: relative;
+    background-color: rgba(13, 202, 240, 0.09);
+    margin-bottom: 80px;
+}
+
+.breadcrum .heading1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #35b8be;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width:765px) {
+    .breadcrum {
+        margin-bottom: 0px;
+        min-height: 300px;
+    }
+
+    .breadcrum .heading1 {
+        font-size: 40px;
+        width: 80%;
+    }
+}

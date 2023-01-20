@@ -1,0 +1,48 @@
+<section class="accordion">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <ng-container *ngFor="let data of prodcate; let i = index">
+                        <button class="btn btn-primary cus-btn" (click)="change($any($event.target).value); curentindex =i"
+                        [ngClass]="{'toggleColor':curentindex===i}"
+                             value="{{data.category}}">{{data.category|
+                            titlecase}}</button>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="accordion">
+                    <div class="row">
+                        <div class="col-12" *ngFor="let data of question|filter:filterString; let i = index">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button (click)="toggleit(i);" class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            {{data.ques}}
+                                        <span class="tag"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                                        </button>
+                                    </h5>
+                                </div>
+        
+                                <div [ngClass]="quesno===i?'show':''" id="collapseOne"
+                                    class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                      <p>  {{data.ans}} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- *ngIf="class='show'?'toggle':" -->

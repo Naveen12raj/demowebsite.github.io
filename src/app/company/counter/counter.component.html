@@ -1,0 +1,18 @@
+<section class="counter" 
+[ngStyle]="{'background-image': 'url('+ image + ')'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3" *ngFor="let count of counter">
+                        <div class="card card-box">
+                            <h1>{{count.value}}</h1> 
+                            <p>{{count.title}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

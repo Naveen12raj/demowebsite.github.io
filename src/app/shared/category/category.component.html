@@ -1,0 +1,44 @@
+<section class="category" [style.background]="prodcatcolor">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <ng-container *ngFor="let data of prodcat; let i = index">
+                    <button class="btn btn-primary cus-btn" (click)="change($any($event.target).value); curentindex =i"
+                        [ngClass]="{'toggleColor':curentindex===i}" value="{{data.category}}">{{data.category|
+                        titlecase}}</button>
+                </ng-container>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12" *ngFor="let data of product|filter:filterString">
+                        <div class="card card-box">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <img src="{{data.prodimage}}" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-8 col-12 padd-mob">
+                                    <h3> {{data.prodname}}</h3>
+                                    <p> {{data.proddiscp}} </p>
+                                    <div class="input-group"style="width:120px" >
+                                        <div class="input-group-append" id="button-addon4">
+                                            <button 
+                                            [attr.disabled]="count==0?'':null"
+                                              (click)="count=count-1" class="btn btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="text" class="form-control" [value]="count" style="width: 30px;">
+                                        <div class="input-group-append" id="button-addon4">
+                                            <button (click)="count=count+1" class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
